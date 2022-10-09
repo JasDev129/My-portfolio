@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;800&family=Poppins:wght@500;700;900&display=swap');
+
+/* 
+
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: #222831;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (min-width:1024px) {
+    /* NAVIGATION BAR */
+.header{
+
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid #00ADB5;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.navbar{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 24px;
+    color: #00ADB5;
+}
+.nav-title span{
+    font-size: 32px;
+    font-weight: 500;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+.nav-link{
+    font-weight: 600;
+    margin: 32px;
+    font-size: 18px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: #00ADB5;
+}
+.nav-link a:hover{
+  
+    color: #eeee;
+}
+
+/* HERO SECTION */
+.hero-content, .hero-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEEE;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-title{
+    position: absolute;
+    width: 458px;
+    height: 80px;
+    left: 126px;
+    top: 300px;
+    background: rgba(57, 62, 70, 0.9);
+    z-index: 99;
+}
+.hero-title h1{
+    font-size: 36px;
+}
+.hero-content{
+    position: absolute;
+    width: 510px;
+    height: 229px;
+    left: 146px;
+    top: 345px;
+    background: rgba(57, 62, 70, 0.25);
+}
+.hero-profile img{
+    position: absolute;
+    width: 527px;
+    height: 675px;
+    left: 792px;
+    top: 50px;
+    z-index: 9999;
+}
+.box1{
+    position: absolute;
+    width: 510px;
+    height: 229px;
+    left: 692px;
+    top: 180px;
+    background: rgba(57, 62, 70, 0.95);
+    border: 1px solid #00ADB5;
+}
+.box2{
+    position: absolute;
+    width: 510px;
+    height: 229px;
+    left: 901px;
+    top: 220px;
+    background: rgba(57, 62, 70, 0.5);
+    border: 1px solid #00ADB5;
+}
+.box3{
+    position: absolute;
+    width: 510px;
+    height: 229px;
+    left: 720px;
+    top: 450px;
+    background: rgba(57, 62, 70, 0.25);
+    border: 1px solid #00ADB5;
+}
+.box4{
+    position: absolute;
+    width: 510px;
+    height: 229px;
+    left: 914px;
+    top: 480px;
+    background: #393E46;
+    border: 1px solid #00ADB5;
+}
+}

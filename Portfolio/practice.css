@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color1{
+    background-color: gray;
+}
+
+.color2{
+    background-color:pink;
+}
+
+.sliderC{
+    display: flex;
+    width: 350px;
+    color: #fff;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow: auto;
+    flex: none;
+    column-gap: 10px;
+}
+.cardS{
+    scroll-snap-align: center;
+    flex: none;
+    width: 256px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+    font-size: 2em;
+    transition: all .25s linear;
+}
+.card h3{
+    width: 100%;
+    animation: typing 2s steps(18) alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* .card h3::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #323232;
+    position: absolute;
+    animation: typing 2s steps(calc(22 * 2)) alternate;
+} */
+
+@keyframes typing  {
+    from{
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.slider{
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: row;
+    width: 100%;
+}
+.slider .slider-track{
+    animation: scroll 4s linear 0s infinite;
+    display: flex;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 6));
+    }
+}
